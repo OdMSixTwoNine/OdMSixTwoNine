@@ -88,6 +88,34 @@ trading tasks.
 - Show your math for any calculation (returns, position size, P&L) so I can check
   it.
 
+## Knowledge base
+
+The knowledge base lives in `knowledge/`. Its index is loaded below; open entry
+files only when they're relevant to the task.
+
+@knowledge/INDEX.md
+
+- **Read first:** at the start of a task, check the index for related entries
+  and read them before researching from scratch. Tell me which entries you used.
+- **Check freshness before relying on an entry:** if its "Re-check by" date has
+  passed, or it covers something fast-changing, re-verify it against a current
+  source first. If it's wrong, update it (or mark it outdated) and tell me.
+- **Ask before logging:** when a task produces something worth keeping (a
+  verified finding, a decision and its reasons, my preferences, a how-to that
+  worked, a mistake to avoid), ask "Want me to log this?" with a one-line
+  summary. Don't write entries without my yes. Don't ask about trivial things.
+- **What not to log:** passwords, API keys, account numbers or other secrets;
+  live prices or balances (log the source and method instead, since the numbers
+  go stale immediately); anything unverified unless clearly labelled as such.
+- **Format:** one file per topic, named `kebab-case-topic.md`, following
+  `knowledge/_TEMPLATE.md`. Update an existing entry rather than creating a
+  duplicate. Every entry needs sources and a "Last verified" date.
+- **Keep the index in sync:** add, rename or remove the index line whenever an
+  entry changes.
+- **Save it:** sessions run in a temporary container, so commit and push
+  knowledge-base changes right after making them, or they'll be lost. My yes to
+  logging also covers committing and pushing that change.
+
 ## Git
 
 - Write clear, descriptive commit messages explaining why the change was made.
